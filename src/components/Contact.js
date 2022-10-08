@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styling/Contact.css'
 
 function Contact() {
   return (
@@ -17,7 +18,7 @@ function Contact() {
             href='mailto:sejobasicwork@gmail.com'
             target='_blank'
             rel='noreferrer'
-            className='socials'
+            className='socials link-item'
           >
             EMAIL
           </a>
@@ -25,7 +26,7 @@ function Contact() {
             href='http://www.linkedin.com/in/sejo-basic'
             target='_blank'
             rel='noreferrer'
-            className='socials'
+            className='socials link-item'
           >
             LINKEDIN
           </a>
@@ -33,7 +34,7 @@ function Contact() {
             href='https://github.com/sejobasic'
             target='_blank'
             rel='noreferrer'
-            className='socials'
+            className='socials link-item'
           >
             GITHUB
           </a>
@@ -41,7 +42,7 @@ function Contact() {
             href='https://codepen.io/sejobasic'
             target='_blank'
             rel='noreferrer'
-            className='socials'
+            className='socials link-item'
           >
             CODEPEN
           </a>
@@ -49,7 +50,7 @@ function Contact() {
             href='https://open.spotify.com/artist/0KPmCqiU6iscwxQo62WBXN?si=Uu9zCLLPQrKDIRFBe8fn0Q'
             target='_blank'
             rel='noreferrer'
-            className='socials'
+            className='socials link-item'
           >
             SPOTIFY
           </a>
@@ -57,7 +58,7 @@ function Contact() {
             href='https://medium.com/@sejobasic'
             target='_blank'
             rel='noreferrer'
-            className='socials'
+            className='socials link-item'
           >
             BLOG
           </a>

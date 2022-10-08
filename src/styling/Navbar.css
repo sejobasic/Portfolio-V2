@@ -5,15 +5,34 @@
   justify-content: space-between;
 }
 
+.nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  mix-blend-mode: difference;
+  z-index: 3000;
+}
+
 .nav-links {
   display: flex;
   gap: 15px;
 }
 
-.navbar .navbar-container .logo {
-  flex-grow: 1;
+.nav-links span {
+  cursor: pointer;
 }
 
-.navbar .navbar-container .logo {
-  flex-grow: 1;
+@media(max-width: 600px) {
+  .navbar .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo {
+    display: none;
+  }
+  
 }

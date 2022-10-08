@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Cursor from './components/Cursor'
 import Design from './components/Design'
@@ -8,16 +9,19 @@ import './styling/App.css'
 
 function App() {
   return (
+    <>
+    <Cursor />
     <div className="wrapper">
       <div className='main-container'>
-        <Cursor />
         <Navbar />
         <Header />
         <Projects />
         <Design />
         <Contact />
+        <Footer />
       </div>
     </div>
+    </>
   )
 }
 

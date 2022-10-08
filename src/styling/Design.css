@@ -1,0 +1,142 @@
+.design-container {
+  margin-top: 80px;
+}
+
+div.flag {
+  width: 100vw;
+  height: 100vh;
+}
+
+.gallery {
+  -webkit-column-count: 6;
+  -moz-column-count: 6;
+  column-count: 6;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 30%;
+  padding: 0 15px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+.gallery .images {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+  margin-bottom: 1px;
+  position: relative;
+  width: 100%;
+}
+
+.images img {
+  border-radius: 2px;
+  cursor: pointer;
+  /* border: solid 1px #fbdce2; */
+}
+
+.images img {
+  transition: 1s ease;
+}
+
+.images img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
+.images:hover img {
+  filter: opacity(0.8);
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbdce2;
+  transition: opacity 0.4s ease-in, visibility 0.4s ease,
+    transform 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+.modal .modal-img {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  max-height: 10%;
+  display: block;
+  line-height: 0;
+  box-sizing: border-box;
+  padding: 100px 0 100px;
+  margin: 0 auto;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.modal .close {
+  width: 2rem;
+}
+
+.modal-img:hover {
+  mix-blend-mode: exclusion;
+}
+
+.modal.open .close {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.modal.open p {
+  color: #08372c;
+  position: absolute;
+  text-align: center;
+  bottom: 50px;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.close:hover {
+  transform: scale(1.3);
+}
+
+.load-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.load-btn {
+  font-size: 1rem;
+  font-family: neue-haas-unica, sans-serif;
+  font-style: normal;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
