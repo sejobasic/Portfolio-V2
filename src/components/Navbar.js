@@ -1,14 +1,17 @@
 import React from 'react'
+import '../styling/Navbar.css'
 
 function Navbar() {
   return (
     <div className='navbar'>
-      <nav className="navbar-container">
-        <spa className="logo">SB</spa>
-        <spa className="logo">PROJECTS</spa>
-        <spa className="logo">DESIGN</spa>
-        <spa className="logo">CONTACT</spa>
-      </nav>
+      <div className="navbar-container">
+        <span className="logo">SB</span>
+        <nav className='nav-links'>
+          <span>PROJECTS</span>
+          <span>DESIGN</span>
+          <span>CONTACT</span>
+        </nav>
+      </div>
     </div>
   )
 }
