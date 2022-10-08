@@ -73,9 +73,7 @@ h1 {
 }
 
 .divider {
-  width: 100%;
-  height: 2px;
-  background: var(--primary-color);
+border-bottom: 2px solid var(--primary-color);
 }
 
 .whitespace {
