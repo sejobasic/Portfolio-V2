@@ -35,6 +35,10 @@ body::before {
   background: url(../assets/noise.gif);
 }
 
+.main-container {
+  max-width: 1200px;
+}
+
 .main-cursor {
   z-index: 1000;
   border-radius: 50%;
