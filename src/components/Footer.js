@@ -2,7 +2,10 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div className='footer-container'>
+      <span>created by sejo basic</span>
+      <span>2022</span>
+    </div>
   )
 }
 

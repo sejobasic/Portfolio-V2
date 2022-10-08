@@ -64,6 +64,8 @@ function Contact() {
         </div>
       </section>
 
+      <div className="divider"></div>
+
       <div className='whitespace'></div>
     </>
   )
