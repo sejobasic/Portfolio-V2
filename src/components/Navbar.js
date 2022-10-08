@@ -7,8 +7,11 @@ function Navbar() {
     <div className='nav'>
       <div className='navbar'>
         <div className='navbar-container'>
-          <span className='logo'>SB</span>
+          {/* <span className='logo'>SB</span> */}
           <nav className='nav-links'>
+          <Link to='home' spy={true} smooth={true} duration={1000}>
+              <span className='link-item'>HOME</span>
+            </Link>
             <Link to='projects' spy={true} smooth={true} duration={1000}>
               <span className='link-item'>PROJECTS</span>
             </Link>

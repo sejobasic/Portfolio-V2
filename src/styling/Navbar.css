@@ -1,8 +1,8 @@
 .navbar .navbar-container {
   display: flex;
   padding: 12px 0;
-  font-size: 1.2rem;
-  justify-content: space-between;
+  font-size: 1rem;
+  justify-content: center;
 }
 
 .nav {
@@ -16,11 +16,13 @@
 
 .nav-links {
   display: flex;
-  gap: 15px;
+  gap: 100px;
 }
 
-.nav-links span {
+.nav-links span:hover {
   cursor: pointer;
+  font-style: italic;
+
 }
 
 @media(max-width: 600px) {
@@ -29,6 +31,10 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+  }
+
+  .nav-links {
+    gap: 20px;
   }
 
   .logo {

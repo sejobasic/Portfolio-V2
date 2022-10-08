@@ -10,17 +10,17 @@ import './styling/App.css'
 function App() {
   return (
     <>
-    <Cursor />
-    <div className="wrapper">
-      <div className='main-container'>
-        <Navbar />
-        <Header />
-        <Projects />
-        <Design />
-        <Contact />
-        <Footer />
+      <Cursor />
+      <div className='wrapper' id='home'>
+        <div className='main-container'>
+          <Navbar />
+          <Header />
+          <Projects />
+          <Design />
+          <Contact />
+          <Footer />
+        </div>
       </div>
-    </div>
     </>
   )
 }
