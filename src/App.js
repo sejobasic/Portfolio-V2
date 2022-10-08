@@ -8,13 +8,15 @@ import './styling/App.css'
 
 function App() {
   return (
-    <div className='main-container'>
-      <Cursor />
-      <Navbar />
-      <Header />
-      <Projects />
-      <Design />
-      <Contact />
+    <div className="wrapper">
+      <div className='main-container'>
+        <Cursor />
+        <Navbar />
+        <Header />
+        <Projects />
+        <Design />
+        <Contact />
+      </div>
     </div>
   )
 }

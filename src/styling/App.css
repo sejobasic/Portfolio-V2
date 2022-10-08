@@ -48,8 +48,14 @@ h1 {
   font-family: 'Aesthetic';
 }
 
-.main-container {
-  max-width: 1200px;
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .main-container {
+  width: 94%;
+  margin: 0 auto;
 }
 
 .main-cursor {
