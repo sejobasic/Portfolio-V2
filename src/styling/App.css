@@ -14,12 +14,17 @@
   cursor: none;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   color: #716040;
   background: #f9f4ef;
-  height: 100%;
+  overflow-x: hidden;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Aesthetic', neue-haas-unica, sans-serif;
+  font-family: neue-haas-unica, sans-serif;
 }
 
 body::before {
@@ -33,6 +38,14 @@ body::before {
   z-index: 1500;
   pointer-events: none;
   background: url(../assets/noise.gif);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-family: 'Aesthetic';
 }
 
 .main-container {
