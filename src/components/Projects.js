@@ -10,7 +10,7 @@ import trails from '../assets/trails.png'
 function Projects() {
   return (
     <>
-      <div className='section-header'>
+      <div className='section-header' id='projects'>
         <div className='section-header-container'>
           <div className='section-title'>PROJECTS</div>
           <div className='section-order'>/001</div>
@@ -25,6 +25,8 @@ function Projects() {
               <div className='menu-item'>
                 <a
                   href='https://filmlist-project.netlify.app/'
+                  target='_blank'
+                  rel='noreferrer'
                   className='menu-item-link'
                 >
                   ✣ FILM LIST
@@ -48,7 +50,9 @@ function Projects() {
 
               <div className='menu-item'>
                 <a
-                  href='https://filmlist-project.netlify.app/'
+                  href='http://www.layrsequencer.com/'
+                  target='_blank'
+                  rel='noreferrer'
                   className='menu-item-link'
                 >
                   ✣ LAYR SEQUENCER
@@ -68,7 +72,9 @@ function Projects() {
 
               <div className='menu-item'>
                 <a
-                  href='https://filmlist-project.netlify.app/'
+                  href='https://github.com/weiwei-out/MagicFridge'
+                  target='_blank'
+                  rel='noreferrer'
                   className='menu-item-link'
                 >
                   ✣ SIMPLE FRIDGE
@@ -92,7 +98,9 @@ function Projects() {
 
               <div className='menu-item'>
                 <a
-                  href='https://filmlist-project.netlify.app/'
+                  href='https://github.com/sejobasic/Trails-app'
+                  target='_blank'
+                  rel='noreferrer'
                   className='menu-item-link'
                 >
                   ✣ TRAILS

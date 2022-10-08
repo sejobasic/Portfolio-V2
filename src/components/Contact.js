@@ -4,7 +4,7 @@ import '../styling/Contact.css'
 function Contact() {
   return (
     <>
-      <div className='section-header'>
+      <div className='section-header' id='contact'>
         <div className='section-header-container'>
           <div className='section-title'>CONTACT</div>
           <div className='section-order'>/003</div>

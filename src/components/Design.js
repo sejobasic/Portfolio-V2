@@ -12,7 +12,7 @@ import lesssound from '../assets/pop.wav'
 function Design() {
   const [modal, setModal] = useState(false)
   const [tempImgSrc, setTempImgSrc] = useState('')
-  const [visible, setVisible] = useState(8)
+  const [visible, setVisible] = useState(24)
 
   const [playPhoto] = useSound(photosound, { volume: 0.2 })
   const [playModal] = useSound(modalsound, { volume: 0.2 })
@@ -36,7 +36,7 @@ function Design() {
 
   return (
     <>
-      <div className='section-header'>
+      <div className='section-header' id='design'>
         <div className='section-header-container'>
           <div className='section-title'>DESIGN</div>
           <div className='section-order'>/002</div>
