@@ -1,0 +1,11 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  filter: blur(3px);
+  transition: filter 0.3s ease-in-out;
+}
+
+.footer-container:hover {
+  filter: blur(0.3px);
+}
