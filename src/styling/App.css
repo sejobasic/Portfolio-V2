@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Aesthetic';
+  src: url('../assets/Aesthetic-Regular.woff2') format('woff2'),
+    url('../assets/Aesthetic-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+
+body {
+  color: #716040;
+  background: #f9f4ef;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Aesthetic', neue-haas-unica, sans-serif;
+}
+
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: '';
+  opacity: 0.02;
+  z-index: 1500;
+  pointer-events: none;
+  background: url(../assets/noise.gif);
+}
+
+.main-cursor {
+  z-index: 1000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fbdce2;
+  pointer-events: none;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+}
+
+.secondary-cursor {
+  z-index: 10000;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  transform: translate3d(0, 0, 0);
+  position: fixed;
+  background-color: #fbdce2;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+}
