@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styling/Projects.css'
 
 // Project images
 import filmList from '../assets/film.png'
@@ -26,7 +27,7 @@ function Projects() {
                   href='https://filmlist-project.netlify.app/'
                   className='menu-item-link'
                 >
-                  / FILM LIST
+                  ✣ FILM LIST
                 </a>
                 <img
                   src={filmList}
@@ -50,15 +51,15 @@ function Projects() {
                   href='https://filmlist-project.netlify.app/'
                   className='menu-item-link'
                 >
-                  / LAYR
+                  ✣ LAYR SEQUENCER
                 </a>
                 <img src={layr} alt='layr project' className='menu-item-img' />
                 <div className='marquee'>
                   <div className='marquee-inner'>
-                    <span>LAYR</span>
-                    <span>LAYR</span>
-                    <span>LAYR</span>
-                    <span>LAYR</span>
+                    <span>LAYR SEQUENCER</span>
+                    <span>LAYR SEQUENCER</span>
+                    <span>LAYR SEQUENCER</span>
+                    <span>LAYR SEQUENCER</span>
                   </div>
                 </div>
               </div>
@@ -70,7 +71,7 @@ function Projects() {
                   href='https://filmlist-project.netlify.app/'
                   className='menu-item-link'
                 >
-                  / SIMPLE FRIDGE
+                  ✣ SIMPLE FRIDGE
                 </a>
                 <img
                   src={simple}
@@ -94,7 +95,7 @@ function Projects() {
                   href='https://filmlist-project.netlify.app/'
                   className='menu-item-link'
                 >
-                  / TRAILS
+                  ✣ TRAILS
                 </a>
                 <img
                   src={trails}
@@ -103,6 +104,7 @@ function Projects() {
                 />
                 <div className='marquee'>
                   <div className='marquee-inner'>
+                    <span>TRAILS</span>
                     <span>TRAILS</span>
                     <span>TRAILS</span>
                     <span>TRAILS</span>
