@@ -4,6 +4,7 @@
 }
 
 .header .header-container h1 {
+  position: relative;
   font-family: 'Aesthetic';
   font-size: 12rem;
   font-weight: normal;
@@ -29,9 +30,6 @@
   margin-bottom: 20px;
 }
 
-.title {
-  border-bottom: 1px solid var(--primary-color);
-}
 
 @media (max-width: 945px) {
   .header .header-container h1 {

@@ -95,7 +95,7 @@ h1 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--secondary-color);
   pointer-events: none;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
@@ -109,7 +109,7 @@ h1 {
   height: 20px;
   transform: translate3d(0, 0, 0);
   position: fixed;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   border-radius: 50%;
   mix-blend-mode: difference;
 }
