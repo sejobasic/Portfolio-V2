@@ -22,10 +22,9 @@
 .nav-links span:hover {
   cursor: pointer;
   font-style: italic;
-
 }
 
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .navbar .navbar-container {
     display: flex;
     align-items: center;
@@ -40,5 +39,4 @@
   .logo {
     display: none;
   }
-  
 }

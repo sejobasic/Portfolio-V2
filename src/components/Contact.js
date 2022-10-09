@@ -65,8 +65,7 @@ function Contact() {
         </div>
       </section>
 
-      <div className="divider"></div>
-
+      <div className='divider'></div>
     </>
   )
 }

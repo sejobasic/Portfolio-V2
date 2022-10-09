@@ -32,7 +32,6 @@ div.flag {
 .images img {
   border-radius: 2px;
   cursor: pointer;
-  /* border: solid 1px #fbdce2; */
 }
 
 .images img {
@@ -59,7 +58,7 @@ div.flag {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fbdce2;
+  background: var(--primary-color);
   transition: opacity 0.4s ease-in, visibility 0.4s ease,
     transform 0.5s ease-in-out;
   visibility: hidden;
@@ -67,6 +66,7 @@ div.flag {
   transform: scale(0);
   overflow: hidden;
   z-index: 9999;
+  cursor: default;
 }
 
 .modal.open {
@@ -110,7 +110,7 @@ div.flag {
 }
 
 .modal.open p {
-  color: #08372c;
+  color: #f9f4ef;
   position: absolute;
   text-align: center;
   bottom: 50px;

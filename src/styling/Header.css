@@ -16,7 +16,6 @@
   font-weight: 500;
   font-style: normal;
   word-spacing: 5px;
-  
 }
 
 .title-container {
@@ -34,7 +33,7 @@
   border-bottom: 1px solid var(--primary-color);
 }
 
-@media(max-width: 945px) {
+@media (max-width: 945px) {
   .header .header-container h1 {
     margin: 0 auto;
     text-align: center;
@@ -58,7 +57,7 @@
   }
 }
 
-@media(max-width: 550px) {
+@media (max-width: 550px) {
   .header .header-container h1 {
     text-align: center;
     font-size: 5rem;
@@ -71,10 +70,9 @@
   .title-container {
     font-size: 0.9rem;
   }
-  
 }
 
-@media(max-width: 450px) {
+@media (max-width: 450px) {
   .header .header-container h1 {
     text-align: center;
     font-size: 4rem;
@@ -89,4 +87,3 @@
     font-size: 0.7rem;
   }
 }
-

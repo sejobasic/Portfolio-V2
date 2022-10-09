@@ -23,7 +23,8 @@
   cursor: none;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   isolation: isolate;
 }
@@ -32,6 +33,7 @@ body {
   color: var(--primary-color);
   background: var(--bg-color);
   overflow-x: hidden;
+  overscroll-behavior-y: none;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: neue-haas-unica, sans-serif;
@@ -50,7 +52,13 @@ body::before {
   background: url(../assets/noise.gif);
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -74,7 +82,7 @@ h1 {
 }
 
 .divider {
-border-bottom: 1.5px solid var(--primary-color);
+  border-bottom: 1.5px solid var(--primary-color);
 }
 
 .whitespace {
@@ -133,4 +141,18 @@ border-bottom: 1.5px solid var(--primary-color);
 .link-item:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.App {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+.scroll {
+  padding: 2vh 0;
+  pointer-events: none;
 }

@@ -49,7 +49,7 @@ function Design() {
           <div className={modal ? 'modal open' : 'modal'}>
             <Tilt
               glareEnable={true}
-              glareColor='#fbdce2'
+              glareColor='#716040'
               glarePosition='all'
               glareMaxOpacity={0.5}
               perspective={800}
@@ -65,19 +65,10 @@ function Design() {
                 />
               </div>
             </Tilt>
-            <div onClick={playModal}>
-              <img
-                className='close'
-                src={close}
-                alt='close button'
-                onClick={() => setModal(false)}
-              />
-            </div>
-            <p>PHOTOGRAPHY AND DESIGN WORK BY SEJO BASIC</p>
+            <div onClick={playModal}></div>
+            <p>DESIGN WORK BY SEJO BASIC</p>
           </div>
-          <div
-            className='gallery'
-          >
+          <div className='gallery'>
             {designData.slice(0, visible).map((item) => {
               return (
                 <div
@@ -98,16 +89,14 @@ function Design() {
             })}
           </div>
         </div>
-        <div
-              className='load-container'
-            >
-              <button className='load-btn link-item' onClick={showMoreItems}>
-                LOAD MORE
-              </button>
-              <button className='load-btn link-item' onClick={showLessItems}>
-                LOAD LESS
-              </button>
-            </div>
+        <div className='load-container'>
+          <button className='load-btn link-item' onClick={showMoreItems}>
+            LOAD MORE
+          </button>
+          <button className='load-btn link-item' onClick={showLessItems}>
+            LOAD LESS
+          </button>
+        </div>
       </section>
 
       <div className='whitespace'></div>
