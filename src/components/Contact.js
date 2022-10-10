@@ -1,16 +1,17 @@
 import React from 'react'
 import '../styling/Contact.css'
+import Divider from './Divider'
+import Section from './Section'
 
 function Contact() {
   return (
     <>
-      <div className='section-header' id='contact'>
-        <div className='section-header-container'>
-          <div className='section-title'>CONTACT</div>
-          <div className='section-order'>/003</div>
-        </div>
-      </div>
-      <div className='divider'></div>
+      <Section
+        sectionTitle={'CONTACT'}
+        sectionOrder={'/003'}
+        sectionId={'contact'}
+      />
+      <Divider />
 
       <section className='contact-section'>
         <div className='contact-container'>
@@ -65,7 +66,7 @@ function Contact() {
         </div>
       </section>
 
-      <div className='divider'></div>
+      <Divider />
     </>
   )
 }

@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 import '../styling/Design.css'
 import designData from '../utils/designData'
 import Tilt from 'react-parallax-tilt'
 import useSound from 'use-sound'
-import close from '../assets/close.png'
 import photosound from '../assets/wand.wav'
 import modalsound from '../assets/fairy.wav'
 import loadsound from '../assets/pop2.wav'
 import lesssound from '../assets/pop.wav'
+import Divider from './Divider'
+import Section from './Section'
 
 function Design() {
   const [modal, setModal] = useState(false)
@@ -34,18 +36,33 @@ function Design() {
     setModal(true)
   }
 
+  const designVariant = {
+    hidden: { opacity: 0, y: '-10%' },
+    visible: {
+      opacity: 1,
+      y: '0%',
+      transition: {
+        duration: 3,
+      },
+    },
+  }
+
   return (
     <>
-      <div className='section-header' id='design'>
-        <div className='section-header-container'>
-          <div className='section-title'>DESIGN</div>
-          <div className='section-order'>/002</div>
-        </div>
-      </div>
-      <div className='divider'></div>
+      <Section
+        sectionTitle={'DESIGN'}
+        sectionOrder={'/002'}
+        sectionId={'design'}
+      />
+      <Divider />
 
       <section className='design-section'>
-        <div className='design-container'>
+        <motion.div
+          className='design-container'
+          initial='hidden'
+          animate='visible'
+          variants={designVariant}
+        >
           <div className={modal ? 'modal open' : 'modal'}>
             <Tilt
               glareEnable={true}
@@ -88,7 +105,7 @@ function Design() {
               )
             })}
           </div>
-        </div>
+        </motion.div>
         <div className='load-container'>
           <button className='load-btn link-item' onClick={showMoreItems}>
             LOAD MORE

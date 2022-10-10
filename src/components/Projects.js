@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import '../styling/Projects.css'
 
 // Project images
@@ -6,23 +7,40 @@ import filmList from '../assets/film.png'
 import layr from '../assets/layr.png'
 import simple from '../assets/simple.png'
 import trails from '../assets/trails.png'
+import Divider from './Divider'
+import Section from './Section'
 
 function Projects() {
+  const projectVariant = {
+    hidden: { opacity: 0, x: '-80%' },
+    visible: {
+      opacity: 1,
+      x: '0%',
+      transition: {
+        duration: 3,
+      },
+    },
+  }
+
   return (
     <>
-      <div className='section-header' id='projects'>
-        <div className='section-header-container'>
-          <div className='section-title'>PROJECTS</div>
-          <div className='section-order'>/001</div>
-        </div>
-      </div>
-      <div className='divider'></div>
+      <Section
+        sectionTitle={'PROJECTS'}
+        sectionOrder={'/001'}
+        sectionId={'projects'}
+      />
+      <Divider />
 
       <section className='project-section'>
         <div className='project-container'>
           <div>
             <nav className='menu'>
-              <div className='menu-item'>
+              <motion.div
+                className='menu-item'
+                initial='hidden'
+                animate='visible'
+                variants={projectVariant}
+              >
                 <a
                   href='https://filmlist-project.netlify.app/'
                   target='_blank'
@@ -44,11 +62,16 @@ function Projects() {
                     <span>FILM LIST</span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className='divider'></div>
+              <Divider />
 
-              <div className='menu-item'>
+              <motion.div
+                className='menu-item'
+                initial='hidden'
+                animate='visible'
+                variants={projectVariant}
+              >
                 <a
                   href='http://www.layrsequencer.com/'
                   target='_blank'
@@ -66,11 +89,16 @@ function Projects() {
                     <span>LAYR SEQUENCER</span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className='divider'></div>
+              <Divider />
 
-              <div className='menu-item'>
+              <motion.div
+                className='menu-item'
+                initial='hidden'
+                animate='visible'
+                variants={projectVariant}
+              >
                 <a
                   href='https://github.com/weiwei-out/MagicFridge'
                   target='_blank'
@@ -92,11 +120,16 @@ function Projects() {
                     <span>SIMPLE FRIDGE</span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className='divider'></div>
+              <Divider />
 
-              <div className='menu-item'>
+              <motion.div
+                className='menu-item'
+                initial='hidden'
+                animate='visible'
+                variants={projectVariant}
+              >
                 <a
                   href='https://github.com/sejobasic/Trails-app'
                   target='_blank'
@@ -119,9 +152,9 @@ function Projects() {
                     <span>TRAILS</span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className='divider'></div>
+              <Divider />
             </nav>
           </div>
         </div>
