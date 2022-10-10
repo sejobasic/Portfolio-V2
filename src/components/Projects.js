@@ -17,7 +17,7 @@ function Projects() {
       opacity: 1,
       x: '0%',
       transition: {
-        duration: 3,
+        duration: 2,
       },
     },
   }

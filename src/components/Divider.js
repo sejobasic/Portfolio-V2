@@ -19,7 +19,7 @@ function Divider() {
     visible: {
       width: '100%',
       transition: {
-        duration: 3,
+        duration: 2,
         type: 'tween',
       },
     },

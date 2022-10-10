@@ -16,7 +16,7 @@ function Section({ sectionTitle, sectionOrder, sectionId }) {
     visible: {
       opacity: 1,
       transition: {
-        duration: 3,
+        duration: 2,
       },
     },
   }

@@ -20,8 +20,8 @@ function Contact() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.3,
+        staggerChildren: 0.2,
+        delayChildren: 0.2,
         ease: [0.17, 0.67, 0.83, 0.67],
       },
     },
