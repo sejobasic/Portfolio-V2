@@ -91,7 +91,7 @@ h1 {
 }
 
 .main-cursor {
-  z-index: 1000;
+  z-index: 9999;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -103,7 +103,7 @@ h1 {
 }
 
 .secondary-cursor {
-  z-index: 3000;
+  z-index: 9999;
   pointer-events: none;
   width: 20px;
   height: 20px;
@@ -157,6 +157,9 @@ h1 {
 }
 
 @media(max-width: 600px) {
+  * {
+    cursor: default;
+  }
   .main-cursor {
     display: none;
   }

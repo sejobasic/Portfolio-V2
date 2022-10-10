@@ -23,18 +23,27 @@ function Design() {
   const [playLess] = useSound(lesssound, { volume: 0.2 })
 
   const showMoreItems = () => {
-    setVisible((prevValue) => prevValue + 5)
-    playLoad()
+    if (visible <= 48) {
+      setVisible((prevValue) => prevValue + 5)
+      playLoad()
+    }
   }
 
   const showLessItems = () => {
-    setVisible((prevValue) => prevValue - 5)
-    playLess()
+    if (visible > 10) {
+      setVisible((prevValue) => prevValue - 5)
+      playLess()
+    }
   }
 
   const getImg = (imgSrc) => {
     setTempImgSrc(imgSrc)
     setModal(true)
+  }
+
+  const closeModal = () => {
+    playModal()
+    setModal(false)
   }
 
   const controls = useAnimation()
@@ -82,25 +91,18 @@ function Design() {
         >
           <div className={modal ? 'modal open' : 'modal'}>
             <Tilt
-              glareEnable={true}
-              glareColor='#716040'
-              glarePosition='all'
-              glareMaxOpacity={0.5}
-              perspective={800}
+              glareEnable={false}
+              perspective={700}
               tiltMaxAngleX={35}
               tiltMaxAngleY={35}
             >
-              <div onClick={playModal}>
                 <img
                   className='modal-img'
                   src={tempImgSrc}
                   alt='images modal'
-                  onClick={() => setModal(false)}
+                  onClick={closeModal}
                 />
-              </div>
             </Tilt>
-            <div onClick={playModal}></div>
-            <p>DESIGN WORK BY SEJO BASIC</p>
           </div>
           <div className='gallery'>
             {designData.slice(0, visible).map((item) => {

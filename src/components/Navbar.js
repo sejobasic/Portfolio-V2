@@ -27,17 +27,17 @@ function Navbar() {
         >
           {/* <span className='logo'>SB</span> */}
           <nav className='nav-links'>
-            <Link to='home' spy={true} smooth={true} duration={1000}>
-              <span className='link-item'>HOME</span>
+            <Link to='home' spy={true} smooth={true} duration={1000} offset={-100}>
+              <span>HOME</span>
             </Link>
-            <Link to='projects' spy={true} smooth={true} duration={1000}>
-              <span className='link-item'>PROJECTS</span>
+            <Link to='projects' spy={true} smooth={true} duration={1000} offset={-80}>
+              <span>PROJECTS</span>
             </Link>
-            <Link to='design' spy={true} smooth={true} duration={1000}>
-              <span className='link-item'>DESIGN</span>
+            <Link to='design' spy={true} smooth={true} duration={1000} offset={-80}>
+              <span>DESIGN</span>
             </Link>
             <Link to='contact' spy={true} smooth={true} duration={1000}>
-              <span className='link-item'>CONTACT</span>
+              <span>CONTACT</span>
             </Link>
           </nav>
         </motion.div>
