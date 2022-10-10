@@ -36,11 +36,17 @@ function Design() {
     setModal(true)
   }
 
+  if (modal) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = ''
+  }
+
   const designVariant = {
-    hidden: { opacity: 0, y: '-10%' },
+    hidden: { opacity: 0, y: -50 },
     visible: {
       opacity: 1,
-      y: '0%',
+      y: 0,
       transition: {
         duration: 3,
       },

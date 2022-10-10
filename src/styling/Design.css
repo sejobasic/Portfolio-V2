@@ -88,6 +88,7 @@ div.flag {
   margin: 0 auto;
   transition: transform 0.5s;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .modal .close {
@@ -132,6 +133,7 @@ div.flag {
   justify-content: center;
   gap: 15px;
 }
+
 .load-btn {
   padding-top: 20px;
   font-size: 1rem;
@@ -155,5 +157,9 @@ div.flag {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+  }
+
+  .modal .modal-img {
+    width: 80%;
   }
 }
