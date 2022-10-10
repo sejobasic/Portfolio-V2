@@ -1,7 +1,16 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect } from 'react'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 function Section({ sectionTitle, sectionOrder, sectionId }) {
+  const controls = useAnimation()
+  const { ref, inView } = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
   const sectionVariant = {
     hidden: { opacity: 0 },
     visible: {
@@ -18,16 +27,18 @@ function Section({ sectionTitle, sectionOrder, sectionId }) {
         <motion.p
           className='section-title'
           initial='hidden'
-          animate='visible'
+          animate={controls}
           variants={sectionVariant}
+          ref={ref}
         >
           {sectionTitle}
         </motion.p>
         <motion.p
           className='section-order'
           initial='hidden'
-          animate='visible'
+          animate={controls}
           variants={sectionVariant}
+          ref={ref}
         >
           {sectionOrder}
         </motion.p>

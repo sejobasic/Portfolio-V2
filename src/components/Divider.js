@@ -1,7 +1,18 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect } from 'react'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 
 function Divider() {
+
+  const controls = useAnimation()
+  const { ref, inView } = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
+  
 
   const lineVariant = {
     hidden: { width: '0%' },
@@ -17,8 +28,9 @@ function Divider() {
     <motion.div
     className='divider'
     initial='hidden'
-    animate='visible'
+    animate={controls}
     variants={lineVariant}
+    ref={ref}
   ></motion.div>
   )
 }

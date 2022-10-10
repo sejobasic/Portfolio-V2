@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect, useState } from 'react'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
 import '../styling/Design.css'
 import designData from '../utils/designData'
 import Tilt from 'react-parallax-tilt'
@@ -36,6 +37,15 @@ function Design() {
     setModal(true)
   }
 
+  const controls = useAnimation()
+  const { ref, inView } = useInView()
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible')
+    }
+  }, [controls, inView])
+
   if (modal) {
     document.body.style.overflow = 'hidden'
   } else {
@@ -48,7 +58,7 @@ function Design() {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 3,
+        duration: 1,
       },
     },
   }
@@ -66,8 +76,9 @@ function Design() {
         <motion.div
           className='design-container'
           initial='hidden'
-          animate='visible'
+          animate={controls}
           variants={designVariant}
+          ref={ref}
         >
           <div className={modal ? 'modal open' : 'modal'}>
             <Tilt
