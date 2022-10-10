@@ -154,3 +154,13 @@ h1 {
   padding: 2vh 0;
   pointer-events: none;
 }
+
+@media(max-width: 600px) {
+  .main-cursor {
+    display: none;
+  }
+
+  .secondary-cursor {
+    display: none;
+  }
+}
