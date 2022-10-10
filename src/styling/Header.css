@@ -8,6 +8,7 @@
   font-family: 'Aesthetic';
   font-size: 12rem;
   font-weight: normal;
+  letter-spacing: -5px;
   margin: 0;
 }
 
@@ -20,6 +21,7 @@
 }
 
 .title-container {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -28,8 +30,12 @@
   font-size: 1.8rem;
   text-transform: uppercase;
   margin-bottom: 20px;
+  z-index: -2000;
 }
 
+.divider-block {
+  border-bottom: 50px solid var(--bg-color);
+}
 
 @media (max-width: 945px) {
   .header .header-container h1 {

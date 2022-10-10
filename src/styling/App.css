@@ -33,7 +33,6 @@ body {
   color: var(--primary-color);
   background: var(--bg-color);
   overflow-x: hidden;
-  overscroll-behavior-y: none;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: neue-haas-unica, sans-serif;
@@ -103,7 +102,7 @@ h1 {
 }
 
 .secondary-cursor {
-  z-index: 1000;
+  z-index: 3000;
   pointer-events: none;
   width: 20px;
   height: 20px;
@@ -111,7 +110,6 @@ h1 {
   position: fixed;
   background-color: var(--secondary-color);
   border-radius: 50%;
-  mix-blend-mode: difference;
 }
 
 .section-header .section-header-container {

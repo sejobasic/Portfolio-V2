@@ -21,7 +21,6 @@
 
 .nav-links span:hover {
   cursor: pointer;
-  font-style: italic;
 }
 
 @media (max-width: 600px) {
