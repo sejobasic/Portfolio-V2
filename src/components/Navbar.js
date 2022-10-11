@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
 import '../styling/Navbar.css'
@@ -25,15 +25,32 @@ function Navbar() {
           animate='visible'
           variants={navVariant}
         >
-          {/* <span className='logo'>SB</span> */}
           <nav className='nav-links'>
-            <Link to='home' spy={true} smooth={true} duration={1000} offset={-100}>
+            <Link
+              to='home'
+              spy={true}
+              smooth={true}
+              duration={1000}
+              offset={-100}
+            >
               <span>HOME</span>
             </Link>
-            <Link to='projects' spy={true} smooth={true} duration={1000} offset={-80}>
+            <Link
+              to='projects'
+              spy={true}
+              smooth={true}
+              duration={1000}
+              offset={-80}
+            >
               <span>PROJECTS</span>
             </Link>
-            <Link to='design' spy={true} smooth={true} duration={1000} offset={-80}>
+            <Link
+              to='design'
+              spy={true}
+              smooth={true}
+              duration={1000}
+              offset={-80}
+            >
               <span>DESIGN</span>
             </Link>
             <Link to='contact' spy={true} smooth={true} duration={1000}>

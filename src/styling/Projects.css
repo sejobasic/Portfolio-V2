@@ -12,7 +12,6 @@
   display: inline-block;
   cursor: pointer;
   position: relative;
-  color: var(--primary-color);
   -webkit-transition: opacity 0.4s;
   transition: opacity 0.4s;
   font-family: 'Aesthetic';
@@ -71,7 +70,6 @@
   top: 0;
   left: 0;
   right: 0;
-  color: var(--primary-color);
   pointer-events: none;
 }
 
