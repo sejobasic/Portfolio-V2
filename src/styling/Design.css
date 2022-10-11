@@ -24,7 +24,7 @@ div.flag {
 .gallery .images {
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
-  margin-bottom: 1px;
+  margin-bottom: 10px;
   position: relative;
   width: 100%;
 }
@@ -49,81 +49,32 @@ div.flag {
   filter: opacity(0.8);
 }
 
-.modal {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
+.backdrop {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.6);
-  transition: opacity 0.4s ease-in, visibility 0.4s ease,
-    transform 0.5s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
-  transform: scale(0);
-  overflow: hidden;
-  z-index: 3000;
-  cursor: default;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 1;
 }
 
-.modal.open {
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1);
-  overflow: hidden;
-}
-
-.modal .modal-img {
+.backdrop .modal-img {
+  display: block;
   width: 50%;
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
   max-height: 10%;
-  display: block;
   line-height: 0;
-  box-sizing: border-box;
   padding: 100px 0 100px;
   margin: 0 auto;
   transition: transform 0.5s;
   cursor: pointer;
   overflow: hidden;
-}
-
-.modal .close {
-  width: 2rem;
-}
-
-.modal-img:hover {
-  mix-blend-mode: exclusion;
-}
-
-.modal.open .close {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  width: 2rem;
-  height: 2rem;
-  padding: 5px;
-  transition: transform 0.2s;
-  cursor: pointer;
-}
-
-.modal.open p {
-  color: #f9f4ef;
-  position: absolute;
-  text-align: center;
-  bottom: 50px;
-  letter-spacing: 3px;
-  font-size: 12px;
-  font-family: neue-haas-unica, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.close:hover {
-  transform: scale(1.3);
 }
 
 .load-container {
@@ -159,7 +110,7 @@ div.flag {
     column-count: 2;
   }
 
-  .modal .modal-img {
-    width: 80%;
+  .backdrop .modal-img {
+    width: 85%;
   }
 }

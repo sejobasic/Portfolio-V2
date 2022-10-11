@@ -3,7 +3,6 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import '../styling/Design.css'
 import designData from '../utils/designData'
-import Tilt from 'react-parallax-tilt'
 import useSound from 'use-sound'
 import photosound from '../assets/wand.wav'
 import modalsound from '../assets/fairy.wav'
@@ -11,6 +10,7 @@ import loadsound from '../assets/pop2.wav'
 import lesssound from '../assets/pop.wav'
 import Divider from './Divider'
 import Section from './Section'
+import Modal from './Modal'
 
 function Design() {
   const [modal, setModal] = useState(false)
@@ -89,21 +89,11 @@ function Design() {
           variants={designVariant}
           ref={ref}
         >
-          <div className={modal ? 'modal open' : 'modal'}>
-            <Tilt
-              glareEnable={false}
-              perspective={700}
-              tiltMaxAngleX={35}
-              tiltMaxAngleY={35}
-            >
-                <img
-                  className='modal-img'
-                  src={tempImgSrc}
-                  alt='images modal'
-                  onClick={closeModal}
-                />
-            </Tilt>
-          </div>
+          <Modal
+            modal={modal}
+            tempImgSrc={tempImgSrc}
+            closeModal={closeModal}
+          />
           <div className='gallery'>
             {designData.slice(0, visible).map((item) => {
               return (

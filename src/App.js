@@ -13,7 +13,7 @@ function App() {
       <Cursor />
       <div className='wrapper' id='home'>
         <div className='main-container'>
-        <Navbar />
+          <Navbar />
           <Header />
           <Projects />
           <Design />
