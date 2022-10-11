@@ -30,6 +30,7 @@ function Modal({ modal, setModal, tempImgSrc, closeModal }) {
             tiltMaxAngleY={35}
           >
             <motion.img
+              title="CLOSE"
               className='modal-img'
               src={tempImgSrc}
               alt='images modal'
