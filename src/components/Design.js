@@ -15,7 +15,7 @@ import Modal from './Modal'
 function Design() {
   const [modal, setModal] = useState(false)
   const [tempImgSrc, setTempImgSrc] = useState('')
-  const [visible, setVisible] = useState(24)
+  const [visible, setVisible] = useState(16)
 
   const [playPhoto] = useSound(photosound, { volume: 0.2 })
   const [playModal] = useSound(modalsound, { volume: 0.2 })
