@@ -12,7 +12,9 @@ const modalVariant = {
   },
 }
 
-function Modal({ modal, setModal, tempImgSrc, closeModal }) {
+function Modal({ modal, tempImgSrc, closeModal }) {
+
+  
   return (
     <AnimatePresence exitBeforeEnter>
       {modal && (
@@ -28,6 +30,7 @@ function Modal({ modal, setModal, tempImgSrc, closeModal }) {
             perspective={700}
             tiltMaxAngleX={35}
             tiltMaxAngleY={35}
+            trackOnWindow={true}
           >
             <motion.img
               title='CLOSE'
