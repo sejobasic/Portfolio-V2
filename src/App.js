@@ -21,21 +21,22 @@ function App() {
 
   return (
     <>
-      <Cursor />
-      {/* <Loader /> */}
       {loading ? (
         <Loader />
       ) : (
-      <div className='wrapper' id='home'>
-        <div className='main-container'>
-          <Navbar />
-          <Header />
-          <Projects />
-          <Design />
-          <Contact />
-          <Footer />
-        </div>
-      </div>
+        <>
+          <Cursor />
+          <div className='wrapper' id='home'>
+            <div className='main-container'>
+              <Navbar />
+              <Header />
+              <Projects />
+              <Design />
+              <Contact />
+              <Footer />
+            </div>
+          </div>
+        </>
       )}
     </>
   )

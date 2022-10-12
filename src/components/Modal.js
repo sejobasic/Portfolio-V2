@@ -13,8 +13,6 @@ const modalVariant = {
 }
 
 function Modal({ modal, tempImgSrc, closeModal }) {
-
-  
   return (
     <AnimatePresence exitBeforeEnter>
       {modal && (

@@ -1,5 +1,4 @@
 import React from 'react'
-import CountUp from 'react-countup'
 import { motion } from 'framer-motion'
 import AnimatedText from 'react-animated-text-content'
 import '../styling/Loader.css'

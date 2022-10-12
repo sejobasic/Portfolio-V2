@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import '../styling/Navbar.css'
 
 function Navbar() {
-
   const navVariant = {
     hidden: { opacity: 0, y: '-60%' },
     visible: {
