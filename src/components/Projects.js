@@ -2,12 +2,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import projectData from '../utils/projectData'
 import '../styling/Projects.css'
-
-// Project images
-import filmList from '../assets/film.png'
-import layr from '../assets/layr.png'
-import simple from '../assets/simple.png'
-import trails from '../assets/trails.png'
 import Divider from './Divider'
 import Section from './Section'
 
