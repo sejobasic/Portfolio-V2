@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import projectData from '../utils/projectData'
-import '../styling/Projects.css'
+import '../styles/Projects.css'
 import Divider from './Divider'
 import Section from './Section'
 

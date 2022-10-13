@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
-import '../styling/Navbar.css'
+import '../styles/Navbar.css'
 
 function Navbar() {
   const navVariant = {

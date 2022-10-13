@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import '../styling/Header.css'
+import '../styles/Header.css'
 import Divider from './Divider'
 
 function Header() {

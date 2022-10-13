@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import AnimatedText from 'react-animated-text-content'
-import '../styling/Loader.css'
+import '../styles/Loader.css'
 
 function Loader() {
   const loaderVariant = {

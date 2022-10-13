@@ -1,3 +1,4 @@
+// Components
 import Footer from './components/Footer'
 import Contact from './components/Contact'
 import Cursor from './components/Cursor'
@@ -6,7 +7,8 @@ import Header from './components/Header'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Loader from './components/Loader'
-import './styling/App.css'
+
+import './styles/App.css'
 import { useEffect, useState } from 'react'
 
 function App() {

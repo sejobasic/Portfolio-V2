@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import '../styling/Contact.css'
+import '../styles/Contact.css'
 import Divider from './Divider'
 import Section from './Section'
 

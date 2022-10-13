@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import '../styling/Design.css'
+import '../styles/Design.css'
 import designData from '../utils/designData'
 import useSound from 'use-sound'
 import photosound from '../assets/wand.wav'
