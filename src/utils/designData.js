@@ -2,7 +2,7 @@
 export default [
   {
     id: 1,
-    imgSrc: require('https://sejobasic.com/.netlify/large-media/95663b185d'),
+    imgSrc: require('../design/design1.png'),
   },
   {
     id: 2,
