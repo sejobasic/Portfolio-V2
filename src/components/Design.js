@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import '../styles/Design.css'
 import designData from '../utils/designData'
 import useSound from 'use-sound'
@@ -108,7 +108,7 @@ function Design() {
                 >
                   <LazyLoadImage
                     onClick={playPhoto}
-                    effect="blur"
+                    effect='blur'
                     src={item.imgSrc}
                     alt='design work'
                   />
