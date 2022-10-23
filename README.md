@@ -12,7 +12,7 @@
 - Intersection Observer
 - Adobe Photoshop
 
-<img width="1654" alt="display" src="../portfolio-v2/public/display1.png">
-<img width="1654" alt="display" src="../portfolio-v2/public/display2.png">
-<img width="1654" alt="display" src="../portfolio-v2/public/display3.png">
-<img width="1654" alt="display" src="../portfolio-v2/public/display4.png">
+<img  alt="display" src="../portfolio-v2/public/display1.png">
+<img  alt="display" src="../portfolio-v2/public/display2.png">
+<img  alt="display" src="../portfolio-v2/public/display3.png">
+<img  alt="display" src="../portfolio-v2/public/display4.png">
