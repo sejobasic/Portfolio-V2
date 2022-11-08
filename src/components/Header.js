@@ -95,11 +95,11 @@ function Header() {
             <motion.span variants={itemVariant}>Artist</motion.span>
           </motion.div>
           <motion.p initial='hidden' animate='visible' variants={aboutVariant}>
-            HI MY NAME IS SEJO, I AM A SOFTWARE ENGINEER AND UI/GRAPHIC DESIGNER
-            BORN IN CROATIA, BASED IN ARIZONA. I SPECIALIZE IN FRONT-END
-            DEVELOPMENT, CREATIVE DESIGN AND USER EXPERIENCE. I HAVE ALSO BEEN
-            DOING MUSIC PRODUCTION FOR 7 YEARS SPECIALIZING IN ELECTRONIC MUSIC
-            AND SOUND DESIGN.
+            Hi my name is Sejo, I am a Software Engineer and Designer
+            born in Bosnia, based in Arizona. I specialize in Front-End
+            Development, Creative Design and User Experience. I have also been
+            doing music production for 7 years specializing in electronic music
+            and sound design.
           </motion.p>
         </div>
       </div>
