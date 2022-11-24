@@ -12,7 +12,9 @@
 - Intersection Observer
 - Adobe Photoshop
 
-<img  alt="display" src="./public/display1.png">
+![Alt Text](./public/site.gif)
+
+<!-- <img  alt="display" src="./public/display1.png">
 <img  alt="display" src="./public/display2.png">
 <img  alt="display" src="./public/display3.png">
-<img  alt="display" src="./public/display4.png">
+<img  alt="display" src="./public/display4.png"> -->
