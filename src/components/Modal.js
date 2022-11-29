@@ -25,7 +25,7 @@ function Modal({ modal, tempImgSrc, closeModal }) {
         >
           <Tilt
             glareEnable={false}
-            perspective={700}
+            perspective={800}
             tiltMaxAngleX={35}
             tiltMaxAngleY={35}
           >

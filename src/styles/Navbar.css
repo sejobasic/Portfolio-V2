@@ -6,10 +6,10 @@
 }
 
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 80px;
   z-index: 1;
 }
 
@@ -35,7 +35,12 @@
   color: var(--bg-color);
 }
 
-@media (max-width: 600px) {
+
+
+@media (max-width: 840px) {
+  .nav {
+    right: 0;
+  }
   .navbar .navbar-container {
     display: flex;
     align-items: center;

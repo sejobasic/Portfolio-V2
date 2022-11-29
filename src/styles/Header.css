@@ -9,7 +9,7 @@
   font-size: 13rem;
   font-weight: normal;
   letter-spacing: -5px;
-  margin: 0;
+  margin: 0.4em 0;
 }
 
 .header-container p {
@@ -39,7 +39,7 @@
 
 @media (max-width: 945px) {
   .header .header-container h1 {
-    margin: 0 auto;
+    margin: 1em 0 0 0;
     text-align: center;
     font-size: 7rem;
   }
@@ -81,7 +81,7 @@
     text-align: center;
     font-size: 4rem;
     margin-bottom: -50px;
-    margin-top: 20px;
+    margin-top: 1.5em;
   }
 
   .header-container p {
