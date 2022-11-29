@@ -23,14 +23,9 @@
   cursor: none;
 }
 
-html,
 body {
   height: 100%;
   isolation: isolate;
-  overflow-x: hidden;
-}
-
-body {
   overflow-x: hidden;
   color: var(--primary-color);
   background: var(--bg-color);
