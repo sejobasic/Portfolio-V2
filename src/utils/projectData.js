@@ -11,7 +11,7 @@ export default [
     id: 2,
     title: '✣ LAYR SEQUENCER',
     image: require('../assets/layr.png'),
-    link: 'http://www.layrsequencer.com/'
+    link: 'https://github.com/sejobasic/Layr-Sequencer'
   },
   {
     id: 3,
