@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { motion, useAnimation } from 'framer-motion'
+import { saveAs } from 'file-saver'
 import { useInView } from 'react-intersection-observer'
+import img from '../assets/sejoresume.pdf'
 import '../styles/Contact.css'
 import Divider from './Divider'
 import Section from './Section'
@@ -35,6 +37,10 @@ function Contact() {
         duration: 1,
       },
     },
+  }
+
+  function downloadImage() {
+    saveAs(img, 'sejobasic-resume.pdf')
   }
 
   return (
@@ -92,12 +98,10 @@ function Contact() {
           </motion.a>
           <motion.a
             className='socials link-item'
-            href='https://open.spotify.com/artist/0KPmCqiU6iscwxQo62WBXN?si=Uu9zCLLPQrKDIRFBe8fn0Q'
-            target='_blank'
-            rel='noreferrer'
+            onClick={downloadImage}
             variants={itemVariant}
           >
-            SPOTIFY
+            RESUME
           </motion.a>
           <motion.a
             className='socials link-item'

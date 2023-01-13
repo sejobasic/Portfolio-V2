@@ -23,11 +23,11 @@ function App() {
 
   return (
     <>
+      <Cursor />
       {loading ? (
         <Loader />
       ) : (
         <>
-          <Cursor />
           <div className='wrapper' id='home'>
             <div className='main-container'>
               <Navbar />

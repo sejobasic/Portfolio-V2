@@ -74,10 +74,10 @@ function Cursor() {
   }, [])
 
   return (
-    <div>
+    <>
       <div className='main-cursor' ref={cursorRef}></div>
       <div className='secondary-cursor' ref={secondaryCursor}></div>
-    </div>
+    </>
   )
 }
 

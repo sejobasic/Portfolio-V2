@@ -37,6 +37,18 @@
   border-bottom: 50px solid var(--bg-color);
 }
 
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.avatar-img {
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  width: 180px;
+}
+
 @media (max-width: 945px) {
   .header .header-container h1 {
     margin: 1em 0 0 0;

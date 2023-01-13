@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import '../styles/Header.css'
 import Divider from './Divider'
+import { useState } from 'react'
 
 function Header() {
+  const [bio, setBio] = useState('')
+  const [avatar, setAvatar] = useState('')
+
+  useEffect(() => {
+    fetch('https://api.github.com/users/sejobasic')
+      .then((resp) => resp.json())
+      .then((data) => {
+        setBio(data.bio)
+        setAvatar(data.avatar_url)
+        console.log(data)
+      })
+  }, [])
   const header = 'SEJO BASIC'
 
   const headerVariant = {
@@ -94,13 +107,18 @@ function Header() {
             <motion.span variants={itemVariant}>+</motion.span>
             <motion.span variants={itemVariant}>Artist</motion.span>
           </motion.div>
-          <motion.p initial='hidden' animate='visible' variants={aboutVariant}>
-            Hi my name is Sejo, I am a Software Engineer and Designer
-            born in Bosnia, based in Arizona. I specialize in Front-End
-            Development, Creative Design and User Experience. I have also been
-            doing music production for 7 years specializing in electronic music
-            and sound design.
-          </motion.p>
+          <motion.div
+            className='about-container'
+            initial='hidden'
+            animate='visible'
+            variants={aboutVariant}
+          >
+            <img className='avatar-img' src={avatar} alt='profile avatar' />
+            <p>
+              {bio} I have also been doing music production for 7 years
+              specializing in electronic music and sound design.
+            </p>
+          </motion.div>
         </div>
       </div>
       <div className='whitespace'></div>

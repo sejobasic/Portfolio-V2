@@ -101,9 +101,6 @@ function Design() {
                 <div
                   className='images'
                   key={item.id}
-                  drag
-                  dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-                  dragElastic={0.7}
                   onClick={() => getImg(item.imgSrc)}
                 >
                   <LazyLoadImage
