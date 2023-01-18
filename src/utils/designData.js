@@ -62,7 +62,7 @@ export default [
   },
   {
     id: 16,
-    imgSrc: require('../design/design16.png'),
+    imgSrc: require('../design/design8.png'),
   },
   {
     id: 17,
