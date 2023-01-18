@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='footer-container'>
       <span>created by sejo basic</span>
-      <span>2022</span>
+      <span>2023</span>
     </div>
   )
 }
