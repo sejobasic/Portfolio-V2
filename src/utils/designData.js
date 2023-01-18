@@ -50,7 +50,7 @@ export default [
   },
   {
     id: 13,
-    imgSrc: require('../design/design13.png'),
+    imgSrc: require('../design/design53.png'),
   },
   {
     id: 14,
@@ -70,7 +70,7 @@ export default [
   },
   {
     id: 18,
-    imgSrc: require('../design/design18.png'),
+    imgSrc: require('../design/design41.png'),
   },
   {
     id: 19,
@@ -162,7 +162,7 @@ export default [
   },
   {
     id: 41,
-    imgSrc: require('../design/design41.png'),
+    imgSrc: require('../design/design18.png'),
   },
   {
     id: 42,
@@ -191,5 +191,9 @@ export default [
   {
     id: 48,
     imgSrc: require('../design/design10.png'),
+  },
+  {
+    id: 49,
+    imgSrc: require('../design/design13.png'),
   },
 ]
