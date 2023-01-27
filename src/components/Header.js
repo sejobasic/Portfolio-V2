@@ -1,22 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import '../styles/Header.css'
 import Divider from './Divider'
-import { useState } from 'react'
 
 function Header() {
-  const [bio, setBio] = useState('')
-  const [avatar, setAvatar] = useState('')
-
-  useEffect(() => {
-    fetch('https://api.github.com/users/sejobasic')
-      .then((resp) => resp.json())
-      .then((data) => {
-        setBio(data.bio)
-        setAvatar(data.avatar_url)
-        console.log(data)
-      })
-  }, [])
   const header = 'SEJO BASIC'
 
   const headerVariant = {
@@ -113,10 +100,12 @@ function Header() {
             animate='visible'
             variants={aboutVariant}
           >
-            <img className='avatar-img' src={avatar} alt='profile avatar' />
             <p>
-              {bio} I have also been doing music production for 7 years
-              specializing in electronic music and sound design.
+              HI MY NAME IS SEJO, I AM A SOFTWARE ENGINEER AND UI/GRAPHIC
+              DESIGNER BORN IN CROATIA, BASED IN ARIZONA. I SPECIALIZE IN
+              FRONT-END DEVELOPMENT, CREATIVE DESIGN AND USER EXPERIENCE. I HAVE
+              ALSO BEEN DOING MUSIC PRODUCTION FOR 7 YEARS SPECIALIZING IN
+              ELECTRONIC MUSIC AND SOUND DESIGN.
             </p>
           </motion.div>
         </div>
