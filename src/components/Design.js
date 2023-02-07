@@ -56,11 +56,13 @@ function Design() {
     }
   }, [controls, inView])
 
-  if (modal) {
-    document.body.style.overflow = 'hidden'
-  } else {
-    document.body.style.overflow = ''
-  }
+  useEffect(() => {
+    if (modal) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+  }, [modal])
 
   const designVariant = {
     hidden: { opacity: 0, y: -50 },
@@ -96,22 +98,16 @@ function Design() {
             closeModal={closeModal}
           />
           <div className='gallery'>
-            {designData.slice(0, visible).map((item) => {
-              return (
-                <div
-                  className='images'
-                  key={item.id}
-                  onClick={() => getImg(item.imgSrc)}
-                >
-                  <LazyLoadImage
-                    onClick={playPhoto}
-                    effect='blur'
-                    src={item.imgSrc}
-                    alt='design work'
-                  />
-                </div>
-              )
-            })}
+            {designData.slice(0, visible).map(({ id, imgSrc }) => (
+              <div className='images' key={id} onClick={() => getImg(imgSrc)}>
+                <LazyLoadImage
+                  onClick={playPhoto}
+                  effect='blur'
+                  src={imgSrc}
+                  alt='design work'
+                />
+              </div>
+            ))}
           </div>
         </motion.div>
         <div className='load-container'>

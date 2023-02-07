@@ -30,7 +30,7 @@ export default [
   },
   {
     id: 8,
-    imgSrc: require('../design/design42.png'),
+    imgSrc: require('../design/design54.png'),
   },
   {
     id: 9,
@@ -42,7 +42,7 @@ export default [
   },
   {
     id: 11,
-    imgSrc: require('../design/design48.png'),
+    imgSrc: require('../design/design55.png'),
   },
   {
     id: 12,
@@ -58,7 +58,7 @@ export default [
   },
   {
     id: 15,
-    imgSrc: require('../design/design51.png'),
+    imgSrc: require('../design/design56.png'),
   },
   {
     id: 16,
@@ -182,7 +182,7 @@ export default [
   },
   {
     id: 46,
-    imgSrc: require('../design/design14.png'),
+    imgSrc: require('../design/design51.png'),
   },
   {
     id: 47,
@@ -195,5 +195,9 @@ export default [
   {
     id: 49,
     imgSrc: require('../design/design13.png'),
+  },
+  {
+    id: 50,
+    imgSrc: require('../design/design48.png'),
   },
 ]
