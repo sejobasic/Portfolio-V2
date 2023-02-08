@@ -66,7 +66,7 @@ export default [
   },
   {
     id: 17,
-    imgSrc: require('../design/design17.png'),
+    imgSrc: require('../design/design57.png'),
   },
   {
     id: 18,
@@ -199,5 +199,9 @@ export default [
   {
     id: 50,
     imgSrc: require('../design/design48.png'),
+  },
+  {
+    id: 51,
+    imgSrc: require('../design/design17.png'),
   },
 ]
