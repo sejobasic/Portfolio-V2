@@ -47,6 +47,7 @@ function Projects() {
               <span>{project.title}</span>
             </div>
           </div>
+          <p className='project-desc'>{project.desc}</p>
         </motion.div>
         <Divider />
       </>
