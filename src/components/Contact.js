@@ -103,7 +103,7 @@ function Contact() {
           >
             RESUME
           </motion.a>
-          <motion.a
+          {/* <motion.a
             className='socials link-item'
             href='https://medium.com/@sejobasic'
             target='_blank'
@@ -111,7 +111,7 @@ function Contact() {
             variants={itemVariant}
           >
             BLOG
-          </motion.a>
+          </motion.a> */}
         </motion.div>
       </section>
 
