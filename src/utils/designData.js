@@ -36,10 +36,10 @@ export default [
     id: 9,
     imgSrc: require('../design/design50.png'),
   },
-  {
-    id: 10,
-    imgSrc: require('../design/design44.png'),
-  },
+  // {
+  //   id: 10,
+  //   imgSrc: require('../design/design44.png'),
+  // },
   {
     id: 11,
     imgSrc: require('../design/design55.png'),
