@@ -39,10 +39,6 @@ function Contact() {
     },
   }
 
-  function downloadImage() {
-    saveAs(img, 'sejobasic-resume.pdf')
-  }
-
   return (
     <>
       <Section
@@ -96,22 +92,6 @@ function Contact() {
           >
             CODEPEN
           </motion.a>
-          <motion.a
-            className='socials link-item'
-            onClick={downloadImage}
-            variants={itemVariant}
-          >
-            RESUME
-          </motion.a>
-          {/* <motion.a
-            className='socials link-item'
-            href='https://medium.com/@sejobasic'
-            target='_blank'
-            rel='noreferrer'
-            variants={itemVariant}
-          >
-            BLOG
-          </motion.a> */}
         </motion.div>
       </section>
 

@@ -4,7 +4,7 @@ import '../styles/Header.css'
 import Divider from './Divider'
 
 function Header() {
-  const header = 'SEJO BASIC'
+  const header = 'SEJO BAŠIĆ'
 
   const headerVariant = {
     hidden: { opacity: 1 },
@@ -91,8 +91,6 @@ function Header() {
             <motion.span variants={itemVariant}>Designer</motion.span>
             <motion.span variants={itemVariant}>+</motion.span>
             <motion.span variants={itemVariant}>Musician</motion.span>
-            <motion.span variants={itemVariant}>+</motion.span>
-            <motion.span variants={itemVariant}>Artist</motion.span>
           </motion.div>
           <motion.div
             className='about-container'
@@ -101,11 +99,9 @@ function Header() {
             variants={aboutVariant}
           >
             <p>
-              HI MY NAME IS SEJO, I AM A FRONT-END DEVELOPER AND DESIGNER BORN
-              IN BOSNIA, BASED IN ARIZONA. I HAVE A PASSION FOR CREATING
-              VISUALLY APPEALING and INTUITIVE USER EXPERIENCES. I HAVE ALSO
-              BEEN DOING MUSIC PRODUCTION FOR 7 YEARS SPECIALIZING IN ELECTRONIC
-              MUSIC AND SOUND DESIGN.
+            Hi, my name is Sejo Bašić. I’m a front-end developer and designer, born in Bosnia and based in Arizona.
+
+            I build clean, intuitive, and visually engaging web experiences with a focus on e-commerce and user-centered design. I care about creating interfaces that feel polished, easy to use, and thoughtfully built from both a design and development perspective.
             </p>
           </motion.div>
         </div>

@@ -4,8 +4,8 @@ import '../styles/Footer.css'
 function Footer() {
   return (
     <div className='footer-container'>
-      <span>developed by sejo basic</span>
-      <span>2023</span>
+      <span>developed by Sejo Bašić</span>
+      <span>2026</span>
     </div>
   )
 }
