@@ -86,7 +86,7 @@ function Header() {
             animate='visible'
             variants={titleVariant}
           >
-            <motion.span variants={itemVariant}>Creative Developer</motion.span>
+            <motion.span variants={itemVariant}>Software Developer</motion.span>
             <motion.span variants={itemVariant}>+</motion.span>
             <motion.span variants={itemVariant}>Designer</motion.span>
             <motion.span variants={itemVariant}>+</motion.span>
@@ -99,9 +99,7 @@ function Header() {
             variants={aboutVariant}
           >
             <p>
-            Hi, my name is Sejo Bašić. I’m a front-end developer and designer, born in Bosnia and based in Arizona.
-
-            I build clean, intuitive, and visually engaging web experiences with a focus on e-commerce and user-centered design. I care about creating interfaces that feel polished, easy to use, and thoughtfully built from both a design and development perspective.
+            Hi, my name is Sejo. I’m a Software Developer who loves making the web feel a little more thoughtful, creative, and easy to use. Most of my experience has been in e-commerce, where I’ve enjoyed collaborating across teams to turn concepts into real, usable features, refine the little details, and create things that feel good for the people using them. Music is another creative outlet for me. I make electronic music and enjoy exploring new software and tools.
             </p>
           </motion.div>
         </div>
