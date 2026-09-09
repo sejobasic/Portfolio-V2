@@ -86,7 +86,7 @@ function Header() {
             animate='visible'
             variants={titleVariant}
           >
-            <motion.span variants={itemVariant}>Software Developer</motion.span>
+            <motion.span variants={itemVariant}>Developer</motion.span>
             <motion.span variants={itemVariant}>+</motion.span>
             <motion.span variants={itemVariant}>Designer</motion.span>
             <motion.span variants={itemVariant}>+</motion.span>
