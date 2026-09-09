@@ -12,7 +12,7 @@ export default [
     title: "✣ ABLETON WRAPPED",
     desc: 'Personalized Ableton wrap stats app built with React.',
     image: require('../assets/ableton.png'),
-    link: 'www.abletonwrapped.com'
+    link: 'https://abletonwrapped.com'
   },
   {
     id: 3,
